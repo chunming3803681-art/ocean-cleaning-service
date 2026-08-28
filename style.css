@@ -198,16 +198,12 @@ body {
   box-shadow: var(--shadow); border: 1px solid var(--border);
   display: flex; flex-direction: column; gap: 14px;
 }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.contact-form input, .contact-form textarea {
-  width: 100%; padding: 13px 16px; border: 1px solid var(--border); border-radius: 10px;
-  font-family: inherit; font-size: 0.95rem; color: var(--text); background: var(--bg);
-  transition: border .2s, box-shadow .2s;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-  outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(35, 182, 143, 0.15);
-}
-.form-success { display: none; color: #1e7e34; font-weight: 600; }
+.book-title { font-size: 1.35rem; color: var(--deep); }
+.book-sub { color: var(--muted); margin-bottom: 6px; }
+.btn-whatsapp { background: #25d366; color: #fff; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35); }
+.btn-whatsapp:hover { background: #1fb857; transform: translateY(-2px); }
+.btn-call { background: var(--primary-2); color: #fff; box-shadow: 0 8px 20px rgba(42, 139, 119, 0.35); }
+.btn-call:hover { background: var(--primary); transform: translateY(-2px); }
 
 /* ===== 页脚 ===== */
 .footer { background: var(--deep); color: #d6e7e1; padding: 60px 0 0; }
@@ -244,7 +240,6 @@ body {
   .hero { padding: 130px 0 150px; }
   .cards-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
   .stats { gap: 20px; flex-wrap: wrap; }
   .section { padding: 64px 0; }
 }

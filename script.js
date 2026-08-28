@@ -3,8 +3,6 @@
   const menuBtn = document.getElementById('menuBtn');
   const navLinks = document.getElementById('navLinks');
   const navbar = document.getElementById('navbar');
-  const form = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
 
   // ---- 语言切换 ----
   const STORAGE_KEY = 'ocean-lang';
@@ -64,14 +62,6 @@
   } else {
     revealEls.forEach((el) => el.classList.add('visible'));
   }
-
-  // ---- 联系表单 ----
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    success.style.display = 'block';
-    form.reset();
-    setTimeout(() => { success.style.display = 'none'; }, 5000);
-  });
 
   // ---- 年份 ----
   document.getElementById('year').textContent = new Date().getFullYear();
