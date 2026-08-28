@@ -216,8 +216,8 @@ body {
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; padding: 18px 0; font-size: 0.85rem; color: #8fb0a6; }
 
 /* ===== 滚动淡入 ===== */
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.visible { opacity: 1; transform: none; }
 
 /* ===== 响应式 ===== */
 @media (max-width: 900px) {
